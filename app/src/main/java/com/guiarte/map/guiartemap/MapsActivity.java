@@ -43,8 +43,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         LatLng costaRica = new LatLng(10, -84);
-        mMap.addMarker(new MarkerOptions().position(costaRica).title("Costa Rica"));
+        LatLng graficaGenesis = new LatLng(9.9279385,-84.0754053);
+        LatLng ccPani = new LatLng(9.9261353,-84.0716197);
+        LatLng galeriaVidaPlena = new LatLng(9.9322269,-84.0704165);
+
+
+        mMap.addMarker(new MarkerOptions().position(graficaGenesis).title("Gráfica Génesis"));
+        mMap.addMarker(new MarkerOptions().position(ccPani).title("C.C Pani"));
+        mMap.addMarker(new MarkerOptions().position(galeriaVidaPlena).title("Galería Vida Plena"));
         mMap.setMyLocationEnabled(true);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(costaRica));
+
     }
 }
