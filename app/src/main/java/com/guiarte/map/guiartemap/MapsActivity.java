@@ -45,7 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng costaRica = new LatLng(10, -84);
         LatLng graficaGenesis = new LatLng(9.9279385,-84.0754053);
         LatLng ccPani = new LatLng(9.9261353,-84.0716197);
-        LatLng galeriaVidaPlena = new LatLng(9.9322269,-84.0704165);
+        LatLng galeriaVidaPlena = new LatLng(9.9322269,-84.0704164);
 
 
         mMap.addMarker(new MarkerOptions().position(graficaGenesis).title("Gráfica Génesis"));
